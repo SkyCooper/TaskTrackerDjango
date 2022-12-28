@@ -13,8 +13,8 @@ class Todo(models.Model):
   description = models.TextField(blank=True)
   is_done = models.BooleanField(default=False)
   priority = models.IntegerField(choices=PRIORITY, default=2)
-  created_date = models.DateTimeField(auto_now=True)
-  updated_date = models.DateTimeField(auto_now_add=True)
+  updated_date = models.DateTimeField(auto_now=True)
+  created_date = models.DateTimeField(auto_now_add=True)
   
   def __str__(self):
     return self.task

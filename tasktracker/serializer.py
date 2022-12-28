@@ -8,4 +8,5 @@ class TodoSerializer(serializers.ModelSerializer):
     fields = ["id",
               "task",
               "is_done",
+              "priority",
               "created_date"]
